@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ONGC SCADA Login</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+<body>
+    <div class="login-wrapper">
+
+        <div class="logo-box">
+            <img src="assets/ONGC_Logo.svg.png" alt="ONGC Logo">
+        </div>
+        <div class="login-container">
+            <h2>ONGC SCADA DPR System</h2>
+            <p class="subtitle">User Login</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="userid">User ID</label>
+                    <input type="text" id="userid" placeholder="Enter User ID" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                </div>
+
+                <button type="submit">Login</button>
+
+                <p id="error-msg"></p>
+            </form>
+        </div>
+    </div>
+    <script src="frontend/js/login.js"></script>
+</body>
+</html>
