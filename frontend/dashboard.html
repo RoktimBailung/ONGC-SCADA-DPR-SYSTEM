@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DPR SCADA</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<div class="dpr-header">
+    <span>DRILLING RTDMM & PRODUCTION SCADA DPR ASSAM ASSET</span>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="dpr-date-row">
+    <strong>Date:</strong>
+    <input type="date" id="dprDate">
+</div>
+
+<table class="dpr-table" id="drillingTable">
+    <thead>
+        <tr>
+            <th colspan="6" class="table-title">Drilling RTDMM</th>
+        </tr>
+        <tr>
+            <th>RIG Name</th>
+            <th>Location</th>
+            <th>RTDMM Data Availability</th>
+            <th>Remedial Action / Remarks</th>
+            <th>RTDMM Installation Date</th>
+            <th>RTDMM De-installation Date</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<table class="dpr-table" id="productionTable">
+    <thead>
+        <tr>
+            <th colspan="4" class="table-title">Production SCADA</th>
+        </tr>
+        <tr>
+            <th>Production Installation</th>
+            <th>Location</th>
+            <th>SCADA Data Availability</th>
+            <th>Remedial Action / Remarks</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div class="dpr-actions">
+    <button class="save-btn">Save DPR</button>
+    <button class="download-btn">Download DPR</button>
+</div>
+
+<table class="dpr-table" id="activityTable">
+    <thead>
+        <tr>
+            <th colspan="5" class="table-title">
+                Major Activities – <span id="activityMonth"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <th>Section</th>
+            <th>Rig / Installation</th>
+            <th>Field Updated</th>
+            <th>Remarks / New Value</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

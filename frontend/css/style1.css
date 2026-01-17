@@ -1,0 +1,190 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2937;
+    padding: 16px;
+}
+
+/* ================= HEADER ================= */
+.dpr-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b3d91;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.dpr-header span {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logout-btn {
+    background-color: #ffffff;
+    color: #0b3d91;
+    border: none;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================= DATE ROW ================= */
+.dpr-date-row {
+    background-color: #ffffff;
+    border-left: 5px solid #0b3d91;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+/* ================= TABLE CORE FIX ================= */
+.dpr-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;              /* 🔴 VERY IMPORTANT */
+    background-color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.dpr-table th,
+.dpr-table td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;              /* 🔴 PREVENT WRAPPING */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ================= TABLE HEADERS ================= */
+.dpr-table thead th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+.table-title {
+    background-color: #e8f0fe;
+    color: #0b3d91;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* ================= INPUTS INSIDE CELLS ================= */
+.dpr-table input,
+.dpr-table select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ================= COLUMN WIDTH CONTROL ================= */
+/* DRILLING TABLE */
+#drillingTable th:nth-child(1),
+#drillingTable td:nth-child(1) { width: 14%; }
+
+#drillingTable th:nth-child(2),
+#drillingTable td:nth-child(2) { width: 14%; }
+
+#drillingTable th:nth-child(3),
+#drillingTable td:nth-child(3) { width: 18%; }
+
+#drillingTable th:nth-child(4),
+#drillingTable td:nth-child(4) { width: 22%; }
+
+#drillingTable th:nth-child(5),
+#drillingTable td:nth-child(5) { width: 16%; }
+
+#drillingTable th:nth-child(6),
+#drillingTable td:nth-child(6) { width: 16%; }
+
+/* PRODUCTION TABLE */
+#productionTable th:nth-child(1),
+#productionTable td:nth-child(1) { width: 22%; }
+
+#productionTable th:nth-child(2),
+#productionTable td:nth-child(2) { width: 22%; }
+
+#productionTable th:nth-child(3),
+#productionTable td:nth-child(3) { width: 26%; }
+
+#productionTable th:nth-child(4),
+#productionTable td:nth-child(4) { width: 30%; }
+
+/* ================= ACTION BUTTONS ================= */
+.dpr-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background-color: #0b3d91;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: #16a34a;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================= EXCEL-LIKE STATUS COLORS ================= */
+.status-available {
+    background-color: #c6efce;   /* Excel green */
+    color: #006100;
+    font-weight: 600;
+}
+
+.status-building {
+    background-color: #ffe699;   /* Excel orange */
+    color: #7f6000;
+    font-weight: 600;
+}
+
+.status-unavailable {
+    background-color: #f4cccc;   /* Excel red */
+    color: #9c0006;
+    font-weight: 600;
+}
+
+/* ===== FORCE TABLE TITLE STYLE ===== */
+.dpr-table thead .table-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #0b3d91 !important;
+    background-color: #e8f0fe !important;
+    padding: 12px 0 !important;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.8px;
+}
